@@ -32,7 +32,7 @@ export async function POST(req: Request) {
                     2. Key Discussion Points (bullet points of main topics)
                     3. Action Items (specific tasks or follow-ups)
                     
-                    Format each section with clear headings and bullet points where appropriate.`
+                    `
                 }, {
                     role: "user",
                     content: transcript
@@ -41,6 +41,11 @@ export async function POST(req: Request) {
         });
 
         const summaryData = await summaryResponse.json() as OpenAIResponse;
+        
+        if (!summaryData?.choices?.[0]?.message?.content) {
+            throw new Error('Invalid response from OpenAI API');
+        }
+
         const summary = summaryData.choices[0].message.content;
 
         // Enhanced PDF Generation
