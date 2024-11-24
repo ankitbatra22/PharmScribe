@@ -1,15 +1,22 @@
 import { NextResponse } from 'next/server';
 import jsPDF from 'jspdf';
 
+interface OpenAIResponse {
+    choices: Array<{
+        message: {
+            content: string;
+        };
+    }>;
+}
+
 export async function POST(req: Request) {
     try {
-        const { transcript } = await req.json();
+        const { transcript } = await req.json() as { transcript: string };
         
         if (!transcript || transcript.trim() === '') {
             throw new Error('No transcript provided');
         }
 
-        // Enhanced prompt for better structured summary
         const summaryResponse = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
             headers: {
@@ -33,7 +40,7 @@ export async function POST(req: Request) {
             })
         });
 
-        const summaryData = await summaryResponse.json();
+        const summaryData = await summaryResponse.json() as OpenAIResponse;
         const summary = summaryData.choices[0].message.content;
 
         // Enhanced PDF Generation
