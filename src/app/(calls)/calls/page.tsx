@@ -9,6 +9,7 @@ import InviteParticipantsDialog from "~/components/call/invite-participants-dial
 import { type CardProps } from "~/components/layout/card-shell";
 import CreateCallCard from "~/components/call/create-call-card";
 import { Button } from "~/components/ui/button";
+import CardShell from "~/components/layout/card-shell";
 
 export const metadata: Metadata = {
   title: "PharmScribe",
@@ -66,7 +67,9 @@ export default async function CallsPage() {
           <div className="grid w-full grid-cols-1 place-items-center gap-3 px-4 sm:grid-cols-2 md:px-8 lg:grid-cols-3 lg:gap-5">
             <CreateCallCard {...(cardsData[0] as CardProps)} />
             <JoinCallDialog {...(cardsData[1] as CardProps)} />
-            <InviteParticipantsDialog {...(cardsData[2] as CardProps)} />
+            <Link href="/calls/smartdocs" className="w-full">
+              <CardShell card={cardsData[2] as CardProps} />
+            </Link>
           </div>
           <Link
             href={{

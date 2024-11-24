@@ -28,7 +28,7 @@ export default function RegisterPage() {
               Let&apos;s get started
             </h1>
             <p className="text-muted-foreground">
-              Create your Callsquare account
+              Create your PharmScribe account
             </p>
           </div>
           <SocialAuthForm />
