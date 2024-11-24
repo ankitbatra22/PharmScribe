@@ -1,4 +1,4 @@
-import { LucideTrash } from "lucide-react";
+import { LucideTrash, LucideFile, LucideMic, LucideMicOff, LucideDownload} from "lucide-react";
 import { type SVGProps } from "react";
 
 export const Icons = {
@@ -312,5 +312,9 @@ export const Icons = {
       <circle cx="19" cy="12" r="1.5" fill="currentColor" />
     </svg>
   ),
+  viewIcon: LucideFile,
+  download: LucideDownload,
+  mic: LucideMic,
+  micOff: LucideMicOff,
   trash: LucideTrash,
 };

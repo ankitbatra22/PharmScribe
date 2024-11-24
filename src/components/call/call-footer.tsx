@@ -20,7 +20,7 @@ import { useToast } from '../ui/use-toast';
 import RejoinCall from './rejoin-call';
 
 
-export default function CallFooter () {
+export default function CallFooter ({ onEndCall }: { onEndCall?: () => void }) {
 
   const {
     isLocalAudioEnabled,
@@ -67,6 +67,11 @@ export default function CallFooter () {
     void enableScreenShare();
     
   }, [actions, isScreenShareEnabled, toast])
+
+  const handleEndCall = React.useCallback(() => {
+    onEndCall?.();
+    setShowRejoinPopup(true);
+  }, [onEndCall]);
 
   return (
     <footer className={`rounded-lg flex items-center mt-auto justify-center sm:justify-start px-5 py-8`}>
@@ -123,9 +128,7 @@ export default function CallFooter () {
         <Button 
           size="sm"
           variant="ghost" 
-          onClick={() => {
-            setShowRejoinPopup(true)
-          }}
+          onClick={handleEndCall}
           className="rounded-full flex justify-center py-6 bg-red-500"
         >
           <HangUpIcon color='white' width={25} height={25} />

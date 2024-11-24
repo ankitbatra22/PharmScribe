@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
   name: "PharmScribe",
   description:
     "An open source video conferencing platform. Connect, collaborate, and communicate via video calls with ease.",
-  url: "https://callsquare.jaleelbennett.com",
+  url: "https://pharmscribeai.vercel.app/",
   ogImage: "https://callsquare.jaleelbennett.com/web-shot.png",
   links: {
     twitter: "https://twitter.com/ankitbatra22",

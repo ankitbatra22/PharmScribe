@@ -4,9 +4,9 @@ import { Icons } from "~/components/ui/icons";
 import SocialAuthForm from "~/components/social-auth-form";
 
 export const metadata: Metadata = {
-  title: "CallSquare - Sign Up",
+  title: "PharmScribe.ai - Sign Up",
   description:
-    "Create your CallSquare account today and start connecting with friends, family, and colleagues through seamless video calls.",
+    "Create your PharmScribe.ai account today",
 };
 
 export default function RegisterPage() {

@@ -11,16 +11,16 @@ import CreateCallCard from "~/components/call/create-call-card";
 import { Button } from "~/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "PharmScribe - Calls Hub",
+  title: "PharmScribe",
   description:
-    "Access your PharmScribe Calls Hub to manage and join your video calls seamlessly.",
+    "Transform Patient Care With AI-Enhanced Consultations",
 };
 
 const cardsData: CardProps[] = [
   {
     title: "Create a call",
     description:
-      "Create a call and invite others to join in conversation, discussion, or collaboration.",
+      "Create a call for patients to join for conversation and discussion.",
     icon: <Icons.video width={24} height={14} />,
     buttonText: "Create",
     loadingIcon: <Icons.spinner width={14} height={14} />,
@@ -29,19 +29,19 @@ const cardsData: CardProps[] = [
   {
     title: "Join a call",
     description:
-      "Join a call by to participate in a conversation, discussion, or collaboration.",
+      "Join a call with your HCP to discuss your health, lab results, and/or medication.",
     icon: <Icons.add width={16} height={16} />,
     buttonText: "Join",
     loadingIcon: <Icons.spinner width={14} height={14} />,
     buttonIcon: <Icons.add className="ml-2" width={16} height={16} />,
   },
   {
-    title: "Invite Participants",
+    title: "Access SmartDocs",
     description:
-      "Invite your friends or participants to join your call and engage in a conversation.",
-    icon: <Icons.invite width={24} height={24} />,
+      "Access and view your SmartDocs from meeting transcripts.",
+    icon: <Icons.viewIcon width={24} height={24} />,
     loadingIcon: <Icons.spinner width={14} height={14} />,
-    buttonText: "Invite",
+    buttonText: "View",
     buttonIcon: <Icons.add className="ml-2" width={16} height={16} />,
   },
 ];
