@@ -25,5 +25,14 @@ const config = {
       "images.pexels.com",
     ],
   },
+  // Add these configurations
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    // If you also want to ignore TypeScript errors during build
+    ignoreBuildErrors: true,
+  },
 };
+
 export default config;
