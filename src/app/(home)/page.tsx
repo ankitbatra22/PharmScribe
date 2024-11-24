@@ -19,6 +19,9 @@ export default function IndexPage() {
               <Badge variant="secondary" className="bg-blue-100 text-blue-800 px-4 py-1">
                 AI-Powered
               </Badge>
+              <Badge variant="secondary" className="bg-emerald-100 text-emerald-800 px-4 py-1">
+                PHIPA Compliant
+              </Badge>
             </div>
             
             <div className="space-y-4">

@@ -5,7 +5,7 @@ export default function CallHistoryLoading() {
         Call history
       </h1>
       <p className="mb-8 text-muted-foreground">
-        Review your past interactions and revisit meaningful moments
+        Review your appointments
       </p>
 
       <div className="rounded-md border p-4">
