@@ -30,7 +30,7 @@ export async function POST(req: Request) {
                     content: `Analyze the conversation and provide a structured summary with the following sections:
                     1. Overall Summary (overview of the patient/practitioner conversation)
                     2. Key Discussion Points (bullet points of main topics)
-                    3. Action Items (specific tasks or follow-ups)
+                    3. Action Items (specific tasks or follow-ups that are important to the patient/practitioner. Perhaps listen for numbers, perscription guidance, treatment plans, etc. )
                     
                     `
                 }, {
