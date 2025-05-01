@@ -13,13 +13,13 @@ export default function IndexPage() {
           {/* Main Hero Content */}
           <div className="flex flex-col items-center justify-center gap-6 text-center">
             <div className="flex items-center gap-2">
-              <Badge variant="secondary" className="bg-blue-100 text-white-800 px-4 py-1">
+              <Badge variant="secondary" className="bg-blue-100 text-gray-800 dark:bg-blue-800 dark:text-gray-100 px-4 py-1">
                 Patient Trusted
               </Badge>
               <Badge variant="secondary" className="bg-blue-100 text-blue-800 px-4 py-1">
                 AI-Powered
               </Badge>
-              <Badge variant="secondary" className="bg-blue-100 text-white-800 px-4 py-1">
+              <Badge variant="secondary" className="bg-blue-100 text-gray-800 dark:bg-blue-800 dark:text-gray-100 px-4 py-1">
                 PHIPA Compliant
               </Badge>
             </div>
@@ -76,15 +76,15 @@ export default function IndexPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature Cards */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
               <h3 className="text-xl font-semibold mb-4">AI Transcription</h3>
               <p className="text-muted-foreground">Real-time conversation transcription with medical terminology recognition.</p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
               <h3 className="text-xl font-semibold mb-4">Smart Summaries</h3>
               <p className="text-muted-foreground">AI-generated consultation summaries with key points and action items.</p>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
               <h3 className="text-xl font-semibold mb-4">Medication Tracking</h3>
               <p className="text-muted-foreground">Automated reminders and adherence monitoring system.</p>
             </div>
@@ -96,15 +96,15 @@ export default function IndexPage() {
       {/* How It Works section (keep existing) */}
       
       {/* Add CTA Section */}
-      <section className="bg-blue-50 py-20">
+      <section className="bg-blue-50 dark:bg-blue-900 py-20">
         <div className="container mx-auto max-w-[1400px] text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Practice?</h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-6 dark:text-white">Ready to Transform Your Practice?</h2>
+          <p className="text-xl text-muted-foreground dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             Join healthcare professionals who are revolutionizing patient care with PharmScribe.ai
           </p>
           <Link href="/register">
-            <Button size="lg" className="py-6 px-8 text-lg bg-blue-600 hover:bg-blue-700">
-              Start Your Free Trial
+            <Button size="lg" className="py-6 px-8 text-lg bg-blue-600 hover:bg-blue-700 text-white dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white">
+              Start Using Now!
             </Button>
           </Link>
         </div>

@@ -52,10 +52,9 @@ export default function SiteFooter() {
             href="https://github.com/JaleelB"
             className="underline hover:text-neutral-600"
           >
-             PharmScribe.ai Team
+             PharmScribe.ai Team (Breanna Quan and Ankit Batra)
           </Link>
           {". "}
-          All rights reserved.
         </p>
 
         <div className="flex space-x-6 md:order-2 md:items-center md:justify-center">
